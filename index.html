@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music-Player</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/musicBar.css">
+</head>
+
+<body>
+    <header id="body-header" class="mleft3vw mright3vw">
+        <div id="top-row-container" class="flex-rw spc-evn">
+            <div id="name-icon-container">
+                <img class="app-icon" src="Images/playerlogo.JPG">
+                <div class="flex-col spc-btw inlBlck">
+                    <div class="ff colorWhite">Ninja</div>
+                    <div class="ff fw-600 colorWhite">Studio</div>
+                </div>
+                <div class="inlBlck">
+                    <div class="ff shiftright colorWhite">Favourites</div>
+                </div>
+            </div>
+
+            <div id="search-bar-container" class="flex-rw spc-btw mleft3vw">
+                <ion-icon name="search-outline" class="iconshift"></ion-icon>
+                <input type="text" id="search-bar-id"  placeholder="Search">
+                <ion-icon name="mic-outline" id="micicon"></ion-icon>
+            </div>
+
+            <div>
+                <ion-icon name="notifications-outline"  class="icn4vh mleft3vw colorWhite"></ion-icon>
+            </div>
+
+            <div>
+                <a href="#"><img class="profile-img mleft3vw" src="Images/rohan.jpg"></a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main id="main-class">
+
+        <div id="columns-container" class="mleft3vw mright3vw flex-rw start">
+            <div id="col1" class="mleft3vw flex-col spc-btw">
+                <!-- top image carosel -->
+                <div class="size-adjust mtop3vh">
+					<div class="song">
+						<span><img src="Images/carousel-images/cover1.jpg" alt=""></span>
+					</div>
+					<div class="song">
+						<span><img src="Images/carousel-images/cover2.jpg" alt=""></span>
+					</div>
+					<div class="song">
+						<span><img src="Images/carousel-images/cover3.jpg" alt=""></span>
+					</div>
+                </div>
+                
+                <!-- latest release -->
+                <section id="latest-release-section" class="flex-rw">
+                    <div class="ff fw-600 mbot3vh colornew">Latest Releases</div>
+                    <div class="flex-rw wrap ff fw-600">
+                        <div class="latest-release-single flex-rw start mbot3vh" click="openPlayerOnClick()">
+                            <div class="latest-release-album-img-div">
+                               
+                                <img class="latest-release-album-img" src="Images/hindi/kohinoor.jpg">
+                                <input type="checkbox" id="label1" class="inputt">                          
+                                <label for="label1" class="colorWhite iconsizee"><ion-icon name="pause-circle-outline"></ion-icon></label>
+                                    <!-- music player bar -->
+                                    <div class="music-player">
+                                        <div class="flex">
+                                            <img id="music" src="Images/hindi/kohinoor.jpg">
+                                            <div id="track" class="colorWhite">
+                                                <div>Kohinoor</div>
+                                                <div>Divine</div>
+                                            </div>
+                                            <div class="icon">
+                                                <ion-icon name="heart-outline" ></ion-icon>
+                                                <ion-icon name="close-circle-outline"></ion-icon>
+                                            </div>
+                                
+                                            <div class="icontwo">
+                                                <ion-icon name="shuffle-outline"></ion-icon>
+                                                <ion-icon name="play-skip-back-outline"></ion-icon>
+                                                <ion-icon name="pause-circle-outline"></ion-icon>
+                                                <ion-icon name="play-skip-forward-outline" ></ion-icon>
+                                                <ion-icon name="repeat-outline" ></ion-icon>
+                                            </div>
+                                
+                                            <div id="musicbar" class="flex">
+                                                
+                                                <span id="timeStart" class="colorWhite" >1:34</span>
+                                                <ion-icon name="ellipse" id="playslider"></ion-icon>
+                                                <div class="skill-progress"> 
+                                                    <div class="eighty-percent mb-teal"></div> 
+                                                </div>
+                                                <div id="timeend" class="colorWhite">4:34</div>
+                                            </div>
+                                
+                                            <div id="soundbar" class="flex">
+                                                <div class="icon1">
+                                                    <ion-icon name="options-outline"></ion-icon>
+                                                    <ion-icon name="volume-medium-outline"></ion-icon>
+                                                </div>
+                                                <ion-icon name="ellipse" id="soundslider"></ion-icon>
+                                                <div class="sound-progress">
+                                                    <div class="forty-percent mb-teal">
+                                                    </div>
+                                                </div>
+                                                <div class="icon2">
+                                                    <ion-icon name="resize-outline"></ion-icon>
+                                                </div>
+                                                
+                                            
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                   
+                            </div>
+                            <div class="single-release-info">
+                                <div class="single-title colorWhite song1">Song 1</div>
+                                <div class="single-release-date colorWhite fontsiz song1">AUG 11,2011</div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="colorWhite">6:35</div>
+                            </div>
+                        </div>
+
+                        <div class="latest-release-single flex-rw start mbot3vh">
+                            <div class="latest-release-album-img-div">
+                                <img class="latest-release-album-img"
+                                    src="Images/hindi/nazey.jpg">
+                            </div>
+                            <div>
+                                <div class="single-title colorWhite">Song 2</div>
+                                <div class="single-release-date colorWhite fontsiz">AUG 11,2011</div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="colorWhite">6:35</div>
+                            </div>
+                        </div>
+
+                        <div class="latest-release-single flex-rw start mbot3vh">
+                            <div class="latest-release-album-img-div">
+                                <img class="latest-release-album-img"
+                                    src="Images/hindi/same.jpg">
+                                
+                            </div>
+                            <div>
+                                <div class="single-title colorWhite">Song 3</div>
+                                <div class="single-release-date colorWhite fontsiz">AUG 11,2011</div>
+                            </div>
+                            <div class="single-options-container">
+
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="colorWhite">6:35</div>
+                            </div>
+
+                        </div>
+
+                        <div class="latest-release-single flex-rw start mbot3vh">
+                            <div class="latest-release-album-img-div">
+                                <img class="latest-release-album-img" src="Images/hindi/galat.jpg">
+                                
+                            </div>
+                            <div>
+                                <div class="single-title colorWhite">Song 4</div>
+                                <div class="single-release-date colorWhite fontsiz">AUG 11,2011</div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                   
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place" >Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="colorWhite">6:35</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+                
+                <!-- popular artists section -->
+                <section id="popular-artists-section" class="ff fw-600 mtop3vh">
+                    <div class="ff fw-600 mbot3vh colornew">Popular Artists</div>
+                    <div id="popular-artists-container" class="flex-rw spc-btw">
+                        <div class="popular-artist-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="popular-artist-image brad5" src="Images/Popular Artish/lataji.jpg" >
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">Lata Mangeshkar</div>
+                        </div>
+
+                        <div class="flex-col start flex-bas-0 hov">
+                            <div id="extra" onclick="window.location.href='playlist.html'">
+                                <img id="myhover" class="popular-artist-image brad5" src="Images/Popular Artish/ar.jpg">
+                                
+                                <div id="playbutton"><ion-icon name="arrow-redo"></ion-icon></div>
+                               
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">A.R Rahman</div>
+                        </div>
+
+                        <div class="flex-col start flex-bas-0">
+                            <div>
+                                <img class="popular-artist-image brad5" src="Images/Popular Artish/arijit.jpg">
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">Arijit Singh</div>
+                        </div>
+
+                        <div class="flex-col start flex-bas-0">
+                            <div>
+                                <img class="popular-artist-image brad5" src="Images/Popular Artish/ed-sheeran.jpg">
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">Ed Shereen</div>
+                        </div>
+
+                        <div class="flex-col start flex-bas-0">
+                            <div>
+                                <img class="popular-artist-image brad5" src="Images/Popular Artish/brunomars.jpg">
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">Bruno Mars</div>
+                        </div>
+
+                        <div class="flex-col start flex-bas-0">
+                            <div >
+                                <img class="popular-artist-image brad5"
+                                    src="Images/Popular Artish/Shreya ghoshal.jpg">
+                            </div>
+                            <div class="popular-artist-name txt-center colorWhite">Shreya Ghoshal</div>
+                        </div>
+                    </div>
+                </section>
+               
+                <!-- Radio Section -->
+                <section id="stations-section" class="ff fw-600">
+                    <div id="stations-container">
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5" src="Images/radio-stations/black.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center colorWhite">Stations</div>
+                        </div>
+
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/Love.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Love</div>
+                        </div>
+
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/retro-radio (2).jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Retro</div>
+                        </div>
+
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/chill-coffee.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Chill</div>
+                        </div>
+
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/workout.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Workout</div>
+                        </div>
+
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/rock.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Rock</div>
+                        </div>
+                        <div class="station-container flex-col start flex-bas-0">
+                            <div>
+                                <img class="radio-image brad5 opac" src="Images/radio-stations/pop.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center popular-artist-name colorWhite">Pop</div>
+                        </div>
+                    </div>
+                </section>
+               
+                <!-- mood section -->
+                <section id="mood-music" class="ff fw-600">
+                    <div class="mood-music-container flex-rw spc-btw">
+                        <div class="mood-music-box flex-col start">
+                            <div>
+                                <img class="mood-image brdrad5 opac" src="Images/mood/party.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center colorWhite">Party</div>
+                        </div>
+
+                        <div class="mood-music-box flex-col start">
+                            <div>
+                                <img class="mood-image brdrad5 opac" src="Images/mood/electronic.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center colorWhite">Electronic</div>
+                        </div>
+
+                        <div class="mood-music-box flex-col start">
+                            <div>
+                                <img class="mood-image brdrad5 opac" src="Images/mood/road-trip.jpg">
+                            </div>
+                            <div class="radio-station-genre txt-center colorWhite">Road Trip</div>
+                        </div>
+
+                    </div>
+                </section>
+                
+                <!-- Latest English Section -->
+                <section id="latest-english-section" class="ff fw-600 mtop3vh">
+                    <div class="mbot3vh colornew">Latest English</div>
+                    <div class="flex-rw spc-btw">
+
+                        <div class="latest-english flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/english/24 magic.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">24 Magic</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG,11 2011</div>
+                        </div>
+
+                        <div class="latest-english flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/english/coloser.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Coloser</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG,11 2011</div>
+                        </div>
+
+                        <div class="latest-english flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/english/perfect.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Perfect</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG,11 2011</div>
+                        </div>
+
+                        <div class="latest-english flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/english/photograph.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Photograph</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG,11 2011</div>
+                        </div>
+
+                        <div class="latest-english flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/english/rap god.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Rap God</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG,11 2011</div>
+                        </div>
+
+                    </div>
+
+                </section>
+               
+                <!-- Latest hindi Section -->
+                <section id="latest-hindi-section" class="ff fw-600 mtop3vh">
+                    <div class="mbot3vh colornew">Latest Hindi</div>
+                    <div class="flex-rw spc-btw">
+
+                        <div class="latest-hindi flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/hindi/galat.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Galat Launda</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG 11,20111</div>
+                        </div>
+
+                        <div class="latest-hindi flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/hindi/kaam.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Kaam 25</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG 11,20111</div>
+                        </div>
+
+                        <div class="latest-hindi flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/hindi/kohinoor.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Kohinoor</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG 11,20111</div>
+                        </div>
+
+                        <div class="latest-hindi flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/hindi/matoiyat.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Mantoiyat</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">AUG 11,20111</div>
+                        </div>
+
+                        <div class="latest-hindi flex-col start flex-bas-0">
+                            <div>
+                                <img class="latest-song-img" src="Images/hindi/nazey.jpg">
+                            </div>
+                            <div class="single-title mar0 colorWhite">Anae Dae</div>
+                            <div class="single-release-date mar0 colorWhite fontsiz">August 11 1994</div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            
+            <!-- right section -->
+            <div id="col2" class="mleft3vw">
+                <section id="queue-container" class="ff fw-600">
+                    <div class="queue-container flex-col start">
+                        <div class="queue-heading flex-rw spc-btw">
+                            <div class="queue-title colornew start">Queue</div>
+                            <div>
+                                <div class="queue-option-title inlBlck">Queue</div>
+                                <div class="dropdown">
+                                    
+                                    <ion-icon name="chevron-down-outline" class="options-icon mleft3vw"></ion-icon>
+                                    <div class="dropdown-content-queue queue-drop-font">
+                                        <div>Playlists</div>
+                                        <hr>
+                                        <div>Favorite Songs</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">01</div>
+                            <img class="queue-song-image " src="Images/queue/allblack.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">All Black</div>
+                                <div class="singer-name colorWhite fontsiz">Raftaar</div>
+                            </div>
+                            
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorBlack"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                            <img class="queue-song-image " src="Images/queue/doyou.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite colorWhite">Do you Know</div>
+                                <div class="singer-name colorWhite colorWhite fontsiz">Diljit Dosanjh</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">03</div>
+                            <img class="queue-song-image " src="Images/queue/jaguar.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite colorWhite">Jaguar</div>
+                                <div class="singer-name colorWhite colorWhite fontsiz">Bohemian</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">04</div>
+                            <img class="queue-song-image " src="Images/queue/kaisae.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Kiase Hua</div>
+                                <div class="singer-name colorWhite fontsiz">Vishal Mishra</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">05</div>
+                            <img class="queue-song-image " src="Images/queue/khaab.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Khaan</div>
+                                <div class="singer-name colorWhite fontsiz">Akhil</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">06</div>
+                            <img class="queue-song-image " src="Images/queue/lahore.jpeg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Lahore</div>
+                                <div class="singer-name colorWhite fontsiz">Guru Randhawa</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">07</div>
+                            <img class="queue-song-image " src="Images/queue/loca.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Loca</div>
+                                <div class="singer-name colorWhite fontsiz">Honey Singh</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">08</div>
+                            <img class="queue-song-image " src="Images/queue/pagal.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Pagal</div>
+                                <div class="singer-name colorWhite fontsiz">Baadsha</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">09</div>
+                            <img class="queue-song-image " src="Images/queue/surma.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Surma</div>
+                                <div class="singer-name colorWhite fontsiz">Jassi Gill</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="queue-item flex-rw start">
+                            <div class="s-no colorWhite">10</div>
+                            <img class="queue-song-image " src="Images/queue/yaarmod.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Yaar Mod Do</div>
+                                <div class="singer-name colorWhite fontsiz">Milin Gaba</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+           
+        </div>
+    </main>
+    <!-- js use to use for icon only -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
