@@ -1,0 +1,159 @@
+.music-player{
+    position: fixed;
+    bottom: 0px;
+    height: 12vh;
+    width: 100rem;
+    left: 0px;
+    background-color: rgb(87, 77, 77);
+    display: none;
+    z-index: 2;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#music{
+    position: relative;
+    margin-top: 0.6rem;
+    left: 6rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+#track{
+    position: relative;
+    margin-left: 6.5rem;
+    top:1.5rem;
+}
+.icon{
+    position: relative;
+    top: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    margin-left: 0.7rem;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.icontwo{
+    position: relative;
+    top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 1rem;
+    /* margin: 0 10px 0 0; */
+    /* padding-left: 4em; */
+    margin-left: 18rem;
+} 
+#musicbar{
+    position: absolute;
+    top: 3.5rem;
+   
+}  
+#timeStart{
+    position: relative;
+    margin-left: 28rem;
+    bottom: 0.5rem;
+}
+#timeend{
+    position: relative;
+    margin-left: 0.5rem;
+    bottom: 0.5rem;
+}
+.skill-progress {
+    /* position: absolute;
+    top: 3.5rem; */
+    width: 20rem;
+    height: 0.5rem;
+    margin-left: -0.5rem;
+    background-color: rgb(150, 143, 143);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
+}
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+.forty-percent {
+    height: inherit;
+    width: 40%;
+}
+.circle{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    color: black;
+    display: inline-block;
+}
+.mb-teal {
+    background-color: #009688;
+}
+/* sound bar */
+/* #soundbar{
+    position: absolute;
+    top: 1.5rem;
+    
+} */
+.sound-progress{
+    position: relative;
+    top: 2rem;
+    left: 25rem;
+    width: 5rem;
+    height: 0.5rem;
+    background-color: rgb(150, 143, 143);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
+}
+
+.icon1{
+    position: relative;
+    left: 24rem;
+    top: 1.75rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 1rem;
+    margin-left: 0.7rem;
+}
+.icon2{
+    position: relative;
+    left: 25rem;
+    top: 1.75rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 1rem;
+    margin-left: 0.7rem;
+}
+
+.fontsiz{
+    font-size: 0.5rem;
+}
+.colorWhite{
+    color: white;
+}
+
+/* slider */
+#playslider{
+    position: relative;
+    left: 40vh;
+    bottom: 0.7vh;
+    color: white;
+    size: 2vh;
+
+    /* align-items: center; */
+    /* top: 1vh; */
+}
+
+#soundslider
+{
+    position: relative;
+    top: 1.8rem;
+    left: 27.5rem;
+    color: white;
+    z-index: 2;
+}

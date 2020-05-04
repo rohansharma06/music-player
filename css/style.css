@@ -1,0 +1,560 @@
+/* body */
+body{
+    background-color: rgb(161, 140, 140);
+}
+
+section{
+    margin-top: 10vh;
+}
+
+/* header */
+#body-header{
+    height: auto;
+}
+#top-row-container{
+    margin-top: 4vh;
+    height: auto;
+}
+#name-icon-container{
+    width:100%;
+}
+.app-icon{
+    height: 7vh;
+    margin-right: 1vw;
+    border-radius: 8px;
+}
+.shiftright{
+    position: relative;
+    left: 15vh;
+    top: -2vh;
+}
+#search-bar-container{
+    height: auto;
+    width:30rem;
+}
+#search-bar-id{
+    height: 2rem;
+    background-color: rgb(136, 119, 119);
+    width: 25rem;
+    font-size: 1rem;
+    border-radius:0.5rem;
+    font-weight: 2rem;
+    border: none;
+}
+::placeholder {
+    position: relative;
+    left: 2rem;
+    color: white;
+    opacity: 1;
+  }
+.iconshift{
+    color: white;
+    position: relative;
+    top: 0.5rem;
+    left: 1.5rem;
+}
+#micicon{
+    color: white;
+    position: relative;
+    top: 0.5rem;
+    right: 2rem;
+    
+}
+.profile-img{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    bottom: 0.5rem;
+    background-color: #4CAF50;
+}
+
+/* left section*/
+#col1{
+    position: relative;
+    width: 60%;
+    height: 60%;
+    justify-content: left;
+}
+
+/* top images carosal */
+.size-adjust {
+    position: relative;
+    top: 3vh;
+    flex-grow: 3;
+    flex-shrink: 1;
+    display: inline-block;
+    display: flex;
+    height: 45vh;
+    width: 55vw;
+    justify-content:space-evenly;
+  }
+  .song {
+    position: relative;
+    height: 45vh;
+    width: 50vw;
+    transition: 0.5s;
+  }
+  
+  .song img {
+    height: 45vh;
+    width: 17vw;
+    margin-right: 4px;
+    margin-left: 2px; 
+  }
+  
+  .song:hover {
+    transform: scale(1.15);
+  }
+
+/* latest release section */
+#latest-release-section{
+    position: relative;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+}
+.latest-release-single{
+    height: auto;
+    display: flex;
+    flex: 1 0 40%;;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.latest-release-album-img{
+    height: 8rem;
+    width: 8rem;
+}
+
+.play-pause-toggle{
+    position: relative;
+    height: 2vw;
+    width: 2vw;
+
+}
+.elipsisStyle{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+}
+/* Dropdown Toggle starts */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 9rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.5rem;
+    right: 0.5em;
+    z-index: 1;
+  }
+  #place{
+      position: relative;
+      left: 1em;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-icon{
+      height: 1rem;
+      width: 1rem;
+      margin-right: 1rem;
+  }
+  .dropdownicon{
+      position: relative;
+      color: rgb(100, 96, 96);
+      font-size: 3vh;
+  }
+
+.latest-release-album-img-div{
+    position: relative;
+}
+.song1{
+    position: relative;
+    left: -50px;
+}
+.single-title{
+    font-size: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.single-release-date{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 0.8rem;
+}
+
+.track-duration{
+    margin-left: auto;
+    font-size: 0.8rem;
+}
+
+.single-options-container{
+    margin-left: auto;
+}
+
+.single-options{
+    width: 1.5vw;
+}
+
+/* popular artists*/
+#popular-artists-section{
+    position: relative;
+}
+.popular-artist-image{
+    height: 7rem;
+    width: 7rem;
+    padding:0.25rem;
+    
+}
+#extra{
+    position: relative;
+    
+}
+#extra #playbutton{
+    position: absolute;
+    cursor: pointer;
+    top: 28%;
+    left: 30%;
+    font-size: 3rem;
+    border-radius: 5px;
+    
+    color: white;
+    display: none;
+}
+#extra:hover{
+    cursor: pointer;
+}
+#extra:hover #playbutton{
+    display: block;
+}
+.popular-artist-name{
+    font-size: 0.8rem;
+}
+
+/* Radio Section */
+#stations-section{
+    position: relative;
+    height:auto;
+    width: auto;
+    
+    background: linear-gradient(to right, #556270, #4c2a83);
+}
+
+#stations-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.radio-image{
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+   
+}
+.radio-station-genre{
+    position: relative;
+    bottom: 50%;
+}
+.radio-image:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+/* Modd section */
+#mood-music{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.mood-image{
+    position: relative;
+    display: flex;
+    flex-grow: 3px;
+    flex-shrink: 1px;
+    display: inline-block;
+    justify-content: space-evenly;
+    height: 9rem;
+    width: 14.5rem;
+}
+.mood-image:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+}
+/* Latest English Section*/
+.latest-english{
+    cursor: pointer;
+    padding: 0.5rem;
+}
+#latest-english-section{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.latest-song-img{
+    height: 10rem;
+    width: 8rem;
+    border-radius: 8px;
+}
+.latest-song-img:hover{
+    transform: scaleX(-1);
+}
+.latest-hindi{
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Latest hindi Section */
+#latest-hindi-section{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+/* Right Section */
+#col2{
+    position: relative;
+    width: 40%;
+}
+
+.queue-header{
+    width: auto;
+}
+
+.queue-heading{
+    margin-bottom: 5vh;
+}
+.queue-title{
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.queue-drop-font{
+    position: relative;
+    font-size: 0.8rem;
+    min-width: 5.5rem;
+}
+
+.queue-item{
+    position: relative;
+    margin-bottom: 3vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+.queue-item:hover{
+    box-shadow: 0px 9px 20px 5px rgba(0,0,0,0.2);
+}
+.s-no{
+    position: relative;
+    top: 0.2rem;
+    left: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.queue-option-title{
+    font-size: 0.7rem;
+}
+.singer-name{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.song-title{
+    font-size: 0.85rem;
+}
+.options-icon{
+    position: relative;
+    top: 10px;
+    width: 1vw;
+    right: 2rem;
+    color: black;
+    font-size: 1.5rem;
+}
+.queue-song-image{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1vw;
+}
+.queue-song-info{
+    margin-left: 1vw;
+    width: 100%;
+}
+.queue-like-icon{
+    position: relative;
+    top: 0.3rem;
+    width: 2rem;
+    size: 2rem;
+    right: 1.5rem;
+}
+.dropdown-content-queue {
+    display: none;
+    position: absolute;
+    right: 1em;
+    background-color: #f9f9f9;
+    min-width: 6rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.5rem;
+    justify-content: center;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content-queue {
+    display: block;
+  }
+
+/* some common classes*/
+.flex-rw{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align:left;
+}
+
+.center{
+    justify-content: center;
+}
+
+.spc-even{
+    justify-content: space-evenly;
+}
+
+.spc-btw{
+    justify-content: space-between;
+}
+
+.spc-ar{
+    justify-content: space-around;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.left{
+    justify-content: left;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.inlBlck{
+    display: inline-block;
+    color: black;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-400{
+    font-weight: 400;
+}
+.ff{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.icn3vh{
+    height: 3vh;
+}
+.icn4vh{
+    position: relative;
+    font-size: 2rem;
+    color: gray;
+}
+.icn-black{
+    filter: brightness(0) saturate(100%)
+}
+.mleft3vw{
+    margin-left: 3vw;
+}
+.mright3vw{
+    margin-right: 3vw;
+}
+.mtop3vh{
+    margin-top: 3vh;
+}
+.mtop10vh{
+    margin-top: 10vh;
+}
+.mbot3vh{
+    margin-bottom: 3vh;
+}
+.opac{
+    opacity: 0.7;
+}
+.brdrad1{
+    border-radius: 0%;
+}
+.brad5{
+    border-radius: 50%;
+}
+.mar0{
+    margin: 0;
+}
+.mar-right-auto{
+    margin-right: auto;
+}
+.width0{
+    width: 0;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.fontWeight{
+    font-weight: 50em;
+}
+.colorWhite{
+    color: white;
+}
+.colorBlack{
+    color: black;
+}
+
+.fontsiz{
+    font-size: 0.5rem;
+}
+.colornew{
+    color: #234b63d9;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px black
+}
+
+
+/* music player icon */
+.inputt{
+    display: none;
+}
+.iconsizee{
+    font-size: 3em;
+    position: relative;
+    left: -100px;
+    top: -35px;
+    cursor: pointer;
+    opacity: 0;
+}
+.iconsizee:hover{
+    opacity: 2;
+}
+.inputt:checked+ label + .music-player{
+    display: block;
+}
