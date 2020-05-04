@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/musicBar.css">
+    <link rel="stylesheet" type="text/css" href="css/playlist.css">
+    
+</head>
+
+<body>
+    <!-- Header starts -->
+    <header id="body-header" class="mleft3vw mright3vw">
+        <div id="top-row-container" class="flex-rw spc-evn">
+            <div id="name-icon-container">
+                <img class="app-icon" src="Images/playerlogo.JPG">
+                <div class="flex-col spc-btw inlBlck">
+                    <div class="ff colorWhite">Ninja</div>
+                    <div class="ff fw-600 colorWhite">Studio</div>
+                </div>
+                <div class="inlBlck">
+                    <div class="ff shiftright colorWhite">Favourites</div>
+                </div>
+            </div>
+
+            <div id="search-bar-container" class="flex-rw spc-btw mleft3vw">
+                <ion-icon name="search-outline" class="iconshift"></ion-icon>
+                <input type="text" id="search-bar-id"  placeholder="Search">
+                <ion-icon name="mic-outline" id="micicon"></ion-icon>
+            </div>
+
+            <div>
+                <ion-icon name="notifications-outline"  class="icn4vh mleft3vw colorWhite"></ion-icon>
+            </div>
+
+            <div>
+                <a href="#"><img class="profile-img mleft3vw" src="Images/rohan.jpg"></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Right section -->
+    <main id="main-class">
+        <div id="columns-container" class="mleft3vw mright3vw flex-rw start">
+            <div id="col1" class="mleft3vw flex-col spc-btw">
+                
+                <!-- singer info-->
+                <section class="music-info">
+                    <div class="flex-rw start ff fw-600">
+                        <div class="flex-col">
+                            <img class="singer-band-img" src="Images/Popular Artish/arrr.jpg">
+                        </div>
+                        <div class="flex-col start">
+                            <div class="flex-rw spc-btw">
+                                <div class="singer-band-name colorWhite">A.R Rahman</div>
+                                <div class="singer-band-followers colorWhite fontsiz">100000 Followers</div>
+                            </div>
+                            <div class="singer-band-nationality colorWhite fontsiz flex-rw">Indian Composer</div>
+                            <!-- </br> -->
+                            <div class="singer-band-description colorWhite flex-rw">
+                                A. R. Rahman, is an Indian composer, singer and music producer who works predominantly in Tamil and 
+                                Hindi movies. His works are noted for integrating Indian classical music with electronic music, world 
+                                music and traditional orchestral arrangements. Rahman also introduced 7.1 surround sound technology to 
+                                South Indian films. 
+                            </div>
+                            <div class="button-container flex-rw start ff fw-600">
+                                <button class="play-all-btn ff fw-600">
+                                    Play All
+                                </button>
+                                <button class="follow-btn ff fw-600 colorWhite">
+                                    Follow
+                                </button>
+                            </div>
+                            <div class="track-album-info-container colorWhite">999 Tracks | 999 Albums</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Songs List Section-->
+                <section id="songs-container" class="ff fw-600">
+                    <div class="songs-container flex-col start">
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                            <img class="queue-song-image " src="Images/queue/jai ho.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Jai Ho</div>
+                                <div class="singer-name colorWhite">A R Rahman</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">02</div>
+                            <img class="queue-song-image " src="Images/queue/jaguar.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Jaguar</div>
+                                <div class="singer-name colorWhite">Bohemian</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">03</div>
+                            <img class="queue-song-image " src="Images/hindi/galat.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Galat Launde</div>
+                                <div class="singer-name colorWhite">Forty Seven</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">04</div>
+                            <img class="queue-song-image " src="Images/hindi/kaam.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Kaam 25</div>
+                                <div class="singer-name colorWhite">Divine</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">05</div>
+                            <img class="queue-song-image " src="Images/hindi/matoiyat.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Matoiyat</div>
+                                <div class="singer-name colorWhite">Raftaar</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>`
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">06</div>
+                            <img class="queue-song-image " src="Images/hindi/nazey.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Aanae Dae</div>
+                                <div class="singer-name colorWhite">Nazey</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">07</div>
+                            <img class="queue-song-image " src="Images/hindi/kohinoor.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Kohinoor</div>
+                                <div class="singer-name colorWhite">Divine</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">08</div>
+                            <img class="queue-song-image " src="Images/queue/jai ho.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Jai Ho</div>
+                                <div class="singer-name colorWhite">A R Rahman</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">09</div>
+                            <img class="queue-song-image " src="Images/hindi/galat.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Galat Launde</div>
+                                <div class="singer-name colorWhite">Forty Seven</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                        <div class="song-item flex-rw start">
+                            <div class="s-no colorWhite">10</div>
+                            <img class="queue-song-image " src="Images/hindi/kaam.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Kaam 25</div>
+                                <div class="singer-name colorWhite">Rohan Sharma</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            <ion-icon name="add-outline" class="queue-like-icon colorWhite"></ion-icon>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- left section-->
+            <div id="col2" class="mleft3vw">
+                <section id="similar-artists-section" class="ff fw-600">
+                    <div class="similar-artists-container flex-col start">
+                        <div class="queue-heading flex-rw spc-btw">
+                            <div class="queue-title colornew">Similar Artists</div>
+                            <div>
+                                <div class="queue-option-title inlBlck colorWhite">View All</div>
+                            </div>
+                        </div>
+
+                        <div class="similar-artist-item flex-rw start">
+                            <div class="similar-artist-img-container">
+                                <img class="similar-artist-img" src="Images/Popular Artish/arijit.jpg">
+                            </div>
+                            
+                            <div class="similar-artist-info flex-col center">
+                                <div class="similar-artist-name colorWhite">
+                                    Arijit Singh
+                                </div>
+                                <div class="similar-artist-type colorWhite">
+                                    Indian Composer
+                                </div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="similar-artist-item flex-rw start">
+                            <div class="similar-artist-img-container">
+                                <img class="similar-artist-img" src="Images/Popular Artish/arijit.jpg">
+                            </div>
+                            <div class="similar-artist-info flex-col center">
+                                <div class="similar-artist-name colorWhite">
+                                    Arijit Singh
+                                </div>
+                                <div class="similar-artist-type colorWhite">
+                                    Indian Composer
+                                </div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="similar-artist-item flex-rw start">
+                            <div class="similar-artist-img-container">
+                                <img class="similar-artist-img" src="Images/Popular Artish/arijit.jpg">
+                            </div>
+                            <div class="similar-artist-info flex-col center">
+                                <div class="similar-artist-name colorWhite">
+                                    Arijit Singh
+                                </div>
+                                <div class="similar-artist-type colorWhite">
+                                    Indian Composer
+                                </div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="similar-artist-item flex-rw start">
+                            <div class="similar-artist-img-container">
+                                <img class="similar-artist-img" src="Images/Popular Artish/arijit.jpg">
+                            </div>
+                            <div class="similar-artist-info flex-col center">
+                                <div class="similar-artist-name colorWhite">
+                                    Arijit Singh
+                                </div>
+                                <div class="similar-artist-type colorWhite">
+                                    Indian Composer
+                                </div>
+                            </div>
+                            <div class="track-duration">
+                                <div class="dropdown">
+                                    <ion-icon name="ellipsis-horizontal-outline" class="elipsisStyle"></ion-icon>
+                                    <div class="dropdown-content">
+                                        <div class="flex-rw start">
+
+                                            <ion-icon name="caret-forward-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Play Now</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="add-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Queue</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="star-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Add To Favorites</div>
+                                        </div>
+                                        <hr>
+                                        <div class="flex-rw start">
+                                            <ion-icon name="information-circle-outline" class="dropdownicon"></ion-icon>
+                                            <div id="place">Get Info</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            <!-- Recently Played Section-->
+
+                <section id="recently-played-section">
+                    <div class="recently-played-container flex-col start">
+                        <div class="queue-heading flex-rw spc-btw">
+                            <div class="queue-title colornew">Recently Played</div>
+                            <div>
+                                <div class="queue-option-title inlBlck colorWhite">View All</div>
+                            </div>
+                        </div>
+                        <div class="song-item width100 trans-back flex-rw start">
+                            <div class="s-no colorWhite"><ion-icon name="stats-chart-outline"></ion-icon></div>
+                            <img class="queue-song-image " src="Images/hindi/kaam.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Kaam 25</div>
+                                <div class="singer-name colorWhite">Divine</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="song-item width100 trans-back flex-rw start">
+                            <div class="s-no colorWhite">02</div>
+                            <img class="queue-song-image " src="Images/queue/allblack.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">All Black</div>
+                                <div class="singer-name colorWhite">Sukhee</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="song-item width100 trans-back flex-rw start">
+                            <div class="s-no colorWhite">03</div>
+                            <img class="queue-song-image " src="Images/queue/doyou.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Do You Know</div>
+                                <div class="singer-name colorWhite">Diljit Dosanjh</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="song-item width100 trans-back flex-rw start">
+                            <div class="s-no colorWhite">04</div>
+                            <img class="queue-song-image " src="Images/queue/lahore.jpeg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Lahore</div>
+                                <div class="singer-name colorWhite">Guru Randhawa</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+
+                        <div class="song-item width100 trans-back flex-rw start">
+                            <div class="s-no colorWhite">05</div>
+                            <img class="queue-song-image " src="Images/queue/loca.jpg">
+                            <div class="queue-song-info flex-col start">
+                                <div class="song-title colorWhite">Loca</div>
+                                <div class="singer-name colorWhite">Honey Singh</div>
+                            </div>
+                            <ion-icon name="heart-outline" class="queue-like-icon colorWhite"></ion-icon>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <div class="flex">
+                <img id="music" src="Images/queue/jai ho.jpg">
+                <div id="track" class="colorWhite">
+                    <div>Jai Ho</div>
+                    <div>A.R Rehman</div>
+                </div>
+                <div class="icon">
+                    <ion-icon name="heart-outline" ></ion-icon>
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </div>
+    
+                <div class="icontwo">
+                    <ion-icon name="shuffle-outline"></ion-icon>
+                    <ion-icon name="play-skip-back-outline"></ion-icon>
+                    <ion-icon name="pause-circle-outline"></ion-icon>
+                    <ion-icon name="play-skip-forward-outline" ></ion-icon>
+                    <ion-icon name="repeat-outline" ></ion-icon>
+                </div>
+    
+                
+                <div id="musicbar" class="flex">
+                    
+                    <span id="timeStart" class="colorWhite" >1:34</span>
+                    <ion-icon name="ellipse" id="playslider"></ion-icon>
+                    <div class="skill-progress"> 
+                        <div class="eighty-percent mb-teal"></div> 
+                    </div>
+                    <div id="timeend" class="colorWhite">4:34</div>
+                </div>
+    
+                <div id="soundbar" class="flex">
+                    <div class="icon1">
+                        <ion-icon name="options-outline"></ion-icon>
+                        <ion-icon name="volume-medium-outline"></ion-icon>
+                    </div>
+                    <ion-icon name="ellipse" id="soundslider"></ion-icon>
+                    <div class="sound-progress">
+                        <div class="forty-percent mb-teal">
+                        </div>
+                    </div>
+                    <div class="icon2">
+                        <ion-icon name="resize-outline"></ion-icon>
+                    </div>
+                    
+                
+                </div>
+    
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>
